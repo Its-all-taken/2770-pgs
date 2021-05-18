@@ -11,10 +11,11 @@ html{
   background: black;
   color: white;
 }
-footer{
+footer, .menu-l{
   padding: 36px 46px;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid white;
 }
 .footer-txt p:first-of-type{
   margin-bottom: 4px;
@@ -94,12 +95,18 @@ h3{
 }
 .zusam{
   background-image: url('../images/blue.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .lynx{
   background-image: url('../images/lyn.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .g21{
   background-image: url('../images/g211.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slide-b img{
   height: 100%;
@@ -109,13 +116,13 @@ h3{
 .slide-t{
   position: absolute;
   left: 46px;
-  top: 80%;
+  bottom: 10%;
 }
-.slick-list,.slick-track {
-    height: 90vh;
+.slick-list, .slick-track {
+  height: 100%;
 }
 .slick-dots {
-    bottom: 2%;
+  bottom: 2%;
 }
 .slick-dots li button:before {
   font-size: 10px;
@@ -128,4 +135,78 @@ h3{
 }
 .slide-t h2{
   margin-top: 2%;
+}
+.slick-dotted.slick-slider{
+  margin-bottom: 0;
+}
+.missions{
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 450px;
+}
+.shop{
+  height: 620px;
+  width: 100%;
+}
+.mslide{
+  height: 100%;
+  width: 25%;
+  transform: skew(-45deg, 0deg);
+  overflow: hidden;
+}
+.mslide:hover{
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: skew(0deg, 0deg)
+}
+.mslide:hover {
+  left: -100px;
+  width: 115%;
+}
+.mslide-image:hover{
+  transform: skew(0deg, 0deg);
+  width: 100%;
+}
+.mslide-t{
+  pointer-events: none;
+  z-index: 10;
+  bottom: 10%;
+  left: 146px;
+  position: absolute;
+  transform: skew(45deg, 0deg);
+  display: none;
+}
+.mslide:hover .mslide-t{
+  display: block;
+  transform: skew(0deg, 0deg);
+}
+.mslide-image{
+  transform: skew(45deg, 0deg);
+  background-image: url('../images/blue.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150%;
+  width: 230%;
+  margin-left: -110px;
+}
+.base{
+  background-image: url('../images/base.png');
+}
+.ship{
+  background-image: url('../images/plane.png');
+}
+.dash{
+  background-image: url('../images/pcs.png');
+}
+.dash:hover{
+  background-position: top;
+}
+.red{
+  background-image: url('../images/glitch.png');
 }
