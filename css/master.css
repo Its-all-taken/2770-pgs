@@ -139,62 +139,20 @@ h3{
 .slick-dotted.slick-slider{
   margin-bottom: 0;
 }
-.missions{
-  position: relative;
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  height: 450px;
-}
 .shop{
+  margin: 0 auto;
   height: 620px;
-  width: 100%;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
 }
-.mslide{
-  height: 100%;
-  width: 25%;
-  transform: skew(-45deg, 0deg);
-  overflow: hidden;
+.shop-item{
+  margin-top: 8%;
+  height: 70%;
+  width: 24%;
+  background-color: gray;
 }
-.mslide:hover{
-  z-index: 3;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  transform: skew(0deg, 0deg)
-}
-.mslide:hover {
-  left: -100px;
-  width: 115%;
-}
-.mslide-image:hover{
-  transform: skew(0deg, 0deg);
-  width: 100%;
-}
-.mslide-t{
-  pointer-events: none;
-  z-index: 10;
-  bottom: 10%;
-  left: 146px;
-  position: absolute;
-  transform: skew(45deg, 0deg);
-  display: none;
-}
-.mslide:hover .mslide-t{
-  display: block;
-  transform: skew(0deg, 0deg);
-}
-.mslide-image{
-  transform: skew(45deg, 0deg);
-  background-image: url('../images/blue.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 150%;
-  width: 230%;
-  margin-left: -110px;
-}
+
 .base{
   background-image: url('../images/base.png');
 }
@@ -204,9 +162,59 @@ h3{
 .dash{
   background-image: url('../images/pcs.png');
 }
-.dash:hover{
-  background-position: top;
-}
 .red{
   background-image: url('../images/glitch.png');
+}
+
+.missions {
+  height: 650px;
+  overflow: hidden;
+}
+.slider-content {
+  height: 650px;
+  width: 10000px;
+}
+.slider-item {
+  height: 650px;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+  transition: all 0.5s;
+}
+.slider-item:first-child {
+  margin-left: -123px;
+}
+.image {
+  float: left;
+  position: relative;
+  transition: all .5s;
+  cursor: pointer;
+}
+.slid-img {
+  height: 650px;
+  width: 200%;
+  top: 0px;
+  position: absolute;
+  left: -115px;
+  background-size: 1200px 650px !important;
+  -webkit-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+  -moz-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+  -ms-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+  transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+  transition: all 0.5s;
+}
+.image-text {
+  width: 500%;
+  opacity: 0;
+  bottom: 10%;
+  left: -15%;
+  position: absolute;
+  color: white;
+  transition: all 0.3s;
+}
+.image-text-f{
+  bottom: 10%;
+  left: 6%;
+}
+.image:hover .image-text {
+  opacity: 1;
 }
