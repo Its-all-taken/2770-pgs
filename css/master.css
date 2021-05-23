@@ -149,7 +149,7 @@ h3{
 .shop-item{
   margin-top: 8%;
   height: 70%;
-  width: 24%;
+  width: 325px;
   background-color: gray;
 }
 
@@ -196,9 +196,6 @@ h3{
   position: absolute;
   left: -115px;
   background-size: 1200px 650px !important;
-  -webkit-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
-  -moz-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
-  -ms-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
   transform: translate3d(0, 0, 0) skew(20deg, 0deg);
   transition: all 0.5s;
 }
