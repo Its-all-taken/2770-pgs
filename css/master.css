@@ -32,7 +32,7 @@ header{
   display: flex;
   justify-content: space-between;
 }
-.h-wrap div:nth-of-type(2){
+.options{
   flex-direction: row;
   display: flex;
 }
@@ -40,10 +40,10 @@ header div h2{
   margin-left: 70px;
 }
 @media all and (max-width: 600px){
-  .h-wrap div:nth-of-type(2){
+  .options{
     flex-direction: column;
   }
-  .h-wrap div:nth-of-type(2) h2:first-of-type{
+  .options h2:first-of-type{
     margin-bottom: 10px;
   }
 }
