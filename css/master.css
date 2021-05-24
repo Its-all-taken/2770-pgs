@@ -153,9 +153,9 @@ p{
   align-items: center;
 }
 .shop-item{
+  position: relative;
   height: 70%;
   width: 325px;
-  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -163,7 +163,18 @@ p{
 }
 .shop-item:hover{
   width: 1200px;
-  background-size: contain;
+}
+.shop-item p{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.shop-item:last-of-type{
+  background-color: #303030;
+}
+.shop-item:last-of-type:hover{
+  background-image: url('../images/gl-gi.gif');
+  background-size: cover;
 }
 
 /*imgs*/
@@ -199,6 +210,9 @@ p{
 }
 .red{
   background-image: url('../images/glitch.png');
+}
+.red:hover{
+  background-image: url('../images/glitch-g.gif');
 }
 
 /*missions slider*/
@@ -236,6 +250,7 @@ p{
   transition: all 0.5s;
 }
 .image-text {
+  pointer-events: none;
   width: 500%;
   opacity: 0;
   bottom: 10%;
