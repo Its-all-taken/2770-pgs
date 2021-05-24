@@ -72,7 +72,7 @@ h2{
 h3{
   font-size: 18px;
 }
-.text{
+p{
   font-size: 18px;
 }
 .text-ac{
@@ -83,6 +83,8 @@ h3{
   font-size: 36px;
   font-weight: bold;
 }
+
+/*slick*/
 .news{
   height: 90vh;
   width: 100%;
@@ -139,20 +141,53 @@ h3{
 .slick-dotted.slick-slider{
   margin-bottom: 0;
 }
+
+/*shop*/
 .shop{
+  position: relative;
   margin: 0 auto;
   height: 620px;
   width: 93%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .shop-item{
-  margin-top: 8%;
   height: 70%;
   width: 325px;
-  background-color: gray;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .5s;
+}
+.shop-item:hover{
+  width: 1200px;
+  background-size: contain;
 }
 
+/*imgs*/
+.cap{
+  background-image: url('../images/cap.png');
+}
+.pins{
+  background-image: url('../images/pin.png');
+}
+.books{
+  background-image: url('../images/book.png');
+}
+.hood{
+  background-image: url('../images/hood.png');
+}
+.arrow{
+  background-image: url('../images/arrows.png');
+}
+.plata{
+  background-image: url('../images/plat.jpeg');
+}
+.making{
+  background-image: url('../images/making.jpeg');
+}
 .base{
   background-image: url('../images/base.png');
 }
@@ -166,6 +201,7 @@ h3{
   background-image: url('../images/glitch.png');
 }
 
+/*missions slider*/
 .missions {
   height: 650px;
   overflow: hidden;
@@ -195,7 +231,7 @@ h3{
   top: 0px;
   position: absolute;
   left: -115px;
-  background-size: 1200px 650px !important;
+  background-size: 1200px 650px;
   transform: translate3d(0, 0, 0) skew(20deg, 0deg);
   transition: all 0.5s;
 }
