@@ -15,6 +15,16 @@
     font-size: 12px;
     line-height: 15px;
   }
+  .nw-text{
+    flex-direction: column;
+  }
+  .nwt-l,.nwt-r{
+    text-align: left;
+    width: 100%;
+  }
+  .nwt-r{
+    margin-top: 3%;
+  }
 }
 @media all and (max-width: 900px){
   .red{

@@ -31,4 +31,5 @@ $(document).ready(function(){
 		$(this).css({"z-index":"999px"})
 		$(this).width($(".missions").width()/1.5)
 	})
+
 });
