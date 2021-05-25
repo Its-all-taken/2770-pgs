@@ -14,6 +14,10 @@ html{
   background: black;
   color: white;
 }
+footer{
+  background: black;
+  color: white;
+}
 footer, .menu-l{
   padding: 36px 46px;
   display: flex;
@@ -71,9 +75,6 @@ h1{
 h2{
   font-size: 24px;
   line-height: 23px;
-}
-.h2-m{
-  font-size: 18px;
 }
 h3{
   font-size: 18px;
@@ -314,22 +315,38 @@ p{
 }
 
 /* news */
+.nw-b a{
+  color: black;
+}
+.no-fix{
+  position: relative;
+}
+.nw-b{
+  background-color: white;
+  color: black;
+}
+.nw-i{
+  background-position: center;
+}
 .nw-i, .nw-text{
   margin: 0 46px;
 }
+.nw-text p{
+  margin-top: 6px;
+}
 .nw-i{
   height: 450px;
-  margin-top: 120px;
+  margin-top: 50px;
 }
 .nw-text{
   margin-top: 5%;
   display: flex;
   margin-bottom: 5%;
+  justify-content: space-between;
 }
 .nwt-l{
   width: 50%;
 }
 .nwt-r{
-  width: 50%;
-  text-align: right;
+  margin-right: 10%;
 }
