@@ -2,11 +2,11 @@ div{
   /* border: 1px solid gray; */
 }
 * {
-min-height: 0;
-min-width: 0;
-  }
-  body{
-    overflow-x: hidden;
+  min-height: 0;
+  min-width: 0;
+}
+body{
+  overflow-x: hidden;
   }
 html{
   font-family: PT Root UI;
@@ -18,7 +18,13 @@ footer, .menu-l{
   padding: 36px 46px;
   display: flex;
   justify-content: space-between;
+}
+.menu-l{
   border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.menu-l h2{
+  text-align: right;
 }
 .footer-txt p:first-of-type{
   margin-bottom: 4px;
@@ -54,12 +60,14 @@ a{
 }
 h1{
   font-size: 40px;
+  line-height: 50px;
 }
 .h1-m{
   font-size: 36px;
 }
 h2{
   font-size: 24px;
+  line-height: 23px;
 }
 .h2-m{
   font-size: 18px;
@@ -69,6 +77,7 @@ h3{
 }
 p{
   font-size: 18px;
+  line-height: 23px;
 }
 .text-ac{
   font-size: 18px;
@@ -80,7 +89,7 @@ p{
 }
 
 /*slick*/
-.news{
+.image-f{
   height: 90vh;
   width: 100%;
 }
@@ -265,4 +274,39 @@ p{
 }
 .image:hover .image-text {
   opacity: 1;
+}
+
+/* missions mobile */
+.missions-m{
+  width: 100%;
+  display: none;
+}
+.mm-sl{
+  height: 100px;
+  background-position: center;
+  padding-left: 46px;
+  padding-top: 20px;
+}
+
+/* redacted */
+.redacted {
+  overflow: hidden;
+}
+.redacted img{
+    width: 70%;
+    min-width: 450px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+.redacted  .image-f{
+    position: relative;
+    height: 86vh !important;
+  }
+.redacted .slide-t p{
+  margin-top: 1em;
+}
+.redacted .slide-t{
+  max-width: 620px;
+}
 }

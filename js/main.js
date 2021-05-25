@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   $('.news').slick({
     autoplay: true,
     autoplaySpeed: 10000,
@@ -14,22 +14,13 @@ $(document).ready(function(){
 	})
 
 	$(".image").mouseover(function(){
-		$(this).find(".slid-img").css({
-			opacity:1
-		})
-
 		$(".image").width($(".missions").width()/4)
 		$(".image").css({"z-index":"-999px"});
-
 		$(this).css({"z-index":"999px"})
 		$(this).width($(".missions").width()/2)
 	})
 
 	$(".image").mouseout(function(){
-		$(this).find(".slid-img").css({
-			opacity:1
-		})
-
 		$(".image").width($(".missions").width()/3.3)
 		$(this).css({"z-index":0})
 	})
@@ -40,9 +31,4 @@ $(document).ready(function(){
 		$(this).css({"z-index":"999px"})
 		$(this).width($(".missions").width()/1.5)
 	})
-
-	$(".image").click(function(){
-		window.open($(".image").attr("data-href") || "/");
-	})
-
 });

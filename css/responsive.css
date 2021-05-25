@@ -6,21 +6,25 @@
     margin-bottom: 10px;
   }
 }
+@media all and (max-width: 700px){
+  .menu-l h1{
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .menu-l h2,p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 @media all and (max-width: 900px){
-  .slider-item {
-    transform: translate3d(0, 0, 0) skew(0deg, 0deg);
+  .red{
+    background-image: url('../images/glitch-g.gif');
   }
-  .slid-img {
-    transform: translate3d(0, 0, 0) skew(0deg, 0deg);
+  .missions{
+    display: none;
   }
-  .slider-item:first-child {
-    margin-left: -60px;
-  }
-  .image-text {
-    left: -10%;
-  }
-  .image-text-f{
-    left: 5%;
+  .missions-m{
+    display: block;
   }
   .shop-item{
     width: 400px;
@@ -48,5 +52,44 @@
   .shop::-webkit-scrollbar-thumb {
     background-color: #555;
     outline: none;
+  }
+  .menu-l{
+    flex-direction: column;
+  }
+  .menu-l h2{
+    text-align: left;
+  }
+}
+@media all and (max-width: 350px){
+  h1{
+    font-size: 36px;
+  }
+  h2{
+    font-size: 18px;
+    line-height: auto;
+  }
+  footer, .menu-l, .h-wrap {
+    padding: 25px 13px;
+  }
+  .slide-t {
+    left: 13px;
+  }
+  .mm-sl {
+    padding-left: 13px;
+  }
+  .shop {
+    height: 480px;
+  }
+  .shop-item {
+    height: 300px;
+  }
+  .shop-item{
+    width: 200px;
+  }
+  .shop-item:hover{
+    width: 200px;
+  }
+  .shop-item:last-of-type{
+    background-image: url('../images/gl-gi.gif');
   }
 }
