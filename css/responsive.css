@@ -1,32 +1,10 @@
-@media all and (max-width: 600px){
-  .options{
-    flex-direction: column;
-    text-align: right;
+@media all and (min-width: 900px){
+  .red:hover{
+    background-image: url('../images/glitch-g.gif');
   }
-  .options h2:first-of-type{
-    margin-bottom: 10px;
-  }
-}
-@media all and (max-width: 850px){
-  .nw-text{
-    flex-direction: column;
-  }
-  .nwt-l,.nwt-r{
-    text-align: left;
-    width: 100%;
-  }
-  .nwt-r{
-    margin-top: 3%;
-  }
-}
-@media all and (max-width: 700px){
-  .menu-l h1{
-    font-size: 18px;
-    line-height: 23px;
-  }
-  .menu-l h2,p{
-    font-size: 12px;
-    line-height: 15px;
+  .shop-item:last-of-type:hover{
+    background-image: url('../images/gl-gi.gif');
+    background-size: cover;
   }
 }
 @media all and (max-width: 900px){
@@ -71,6 +49,49 @@
   }
   .menu-l h2{
     text-align: left;
+  }
+}
+@media all and (max-width: 850px){
+  .nw-text{
+    flex-direction: column;
+  }
+  .nwt-l,.nwt-r{
+    text-align: left;
+    width: 100%;
+  }
+  .nwt-r{
+    margin-top: 3%;
+  }
+}
+@media all and (max-width: 700px){
+  .menu-l h1{
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .menu-l h2,p{
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 600px){
+  .options{
+    flex-direction: column;
+    text-align: right;
+  }
+  .nw-b a {
+    color: white;
+}
+  .options h2:first-of-type{
+    margin-bottom: 10px;
+  }
+  .nw-i{
+    margin: 0px;
+    height: 70vh;
+  }
+  .nwt-r {
+    margin-top: 15%;
+}
+  .no-fix{
+    position: fixed;
   }
 }
 @media all and (max-width: 350px){

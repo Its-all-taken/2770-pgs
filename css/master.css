@@ -1,13 +1,10 @@
-div{
-  /* border: 1px solid gray; */
-}
 * {
   min-height: 0;
   min-width: 0;
 }
 body{
   overflow-x: hidden;
-  }
+}
 html{
   font-family: PT Root UI;
   font-size: 1vw;
@@ -55,8 +52,10 @@ header div h2{
 .logo{
   width: 24px;
   height: 24px;
-  background-image: url('../images/logo.svg');
   background-size: contain;
+}
+.logo-w{
+  background-image: url('../images/logo.svg');
 }
 .logo-b{
   background-image: url('../images/logo-b.svg');
@@ -185,10 +184,6 @@ p{
 .shop-item:last-of-type{
   background-color: #303030;
 }
-.shop-item:last-of-type:hover{
-  background-image: url('../images/gl-gi.gif');
-  background-size: cover;
-}
 
 /*imgs*/
 .cap{
@@ -223,9 +218,6 @@ p{
 }
 .red{
   background-image: url('../images/glitch.png');
-}
-.red:hover{
-  background-image: url('../images/glitch-g.gif');
 }
 
 /*missions slider*/
@@ -349,4 +341,36 @@ p{
 }
 .nwt-r{
   margin-right: 10%;
+}
+
+/* shop */
+.sh-b{
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 550px 550px 550px;
+  column-gap: 15px;
+  row-gap: 45px;
+  padding: 46px;
+  color: black;
+}
+.sh-g{
+  height: 100%;
+  width: 100%;
+}
+.sh-t{
+  margin-top: 20px;
+}
+.cell-l{
+  grid-column: span 2;
+}
+.sh-i{
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+}
+.si-post{
+  background-size: contain;
+  background-position: top;
 }
