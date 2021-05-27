@@ -1,14 +1,8 @@
 @font-face {
-	font-family: 'PT Root UI';
-	src:
-		url('../fonts/PT-Root-UI_Bold.woff2') format('woff2'),
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'PT Root UI';
+	font-family: 'PTRootUIWebRegular';
 	src:
 		url('../fonts/PT-Root-UI_Regular.woff2') format('woff2'),
+		url('PT-Root-UI_Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -21,7 +15,7 @@ body{
   overflow-x: hidden;
 }
 html{
-  font-family: PT Root UI;
+  font-family: PTRootUIWebRegular;
   font-size: 1vw;
   background: black;
   color: white;
