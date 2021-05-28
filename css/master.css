@@ -80,7 +80,7 @@ a{
   color: #fff;
 	transition: .5s;
 }
-a:hover{
+header a:hover{
   text-decoration: none;
   color: blue;
 }
