@@ -2,15 +2,82 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Поддержка</title>
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
+    <style media="screen">
+      html{
+        background-color: white;
+        color: black;
+      }
+      a{
+        color: black;
+      }
+    </style>
   </head>
+  <header class="no-fix">
+    <div class="h-wrap">
+        <a href="index.html">
+          <div class="logo logo-b"></div></a>
+        <div class="options">
+          <h2><a href="./shop.html">магазин</a></h2>
+          <h2><a href="./supp.html">поддержка</a></h2>
+        </div>
+    </div>
+  </header>
   <body>
-
+    <div class="supp-wrap">
+      <h1>техническая поддержка</h1>
+      <div class="form">
+        <div class="field">
+          <p>Имя</p>
+          <input type="text" name="usern" value="">
+        </div>
+        <div class="field">
+          <p for="usern">Продукт</p>
+          <div class="selects">
+            <div class="select"><p>Модуль</p></div>
+            <div class="select"><p>ПО</p></div>
+            <div class="select"><p>Сервис</p></div>
+            <div class="select"><p>Другое</p></div>
+          </div>
+        </div>
+        <div class="field">
+          <p for="serial">Серийный номер</p>
+          <input type="text" name="serial" value="">
+        </div>
+        <div class="field">
+          <p>У вас есть подтверждение покупки?</p>
+          <div class="rad">
+            <label for="appr">Да</label>
+            <input type="radio" name="appr" value="">
+            <label for="appr">Нет</label>
+            <input type="radio" name="appr" value="">
+          </div>
+        </div>
+        <div class="field">
+          <p for="probl">Опишите проблему</p>
+          <textarea id="text-b" name="Text1" cols="40" rows="5"></textarea>
+        </div>
+        <div>
+          <input id="send" type="submit" name="" value="Отправить">
+        </div>
+      </div>
+      <div class="phone">
+        <p>Служба поддержки:</p>
+        <h1>+46 (0) 102 11 58 54</h1>
+      </div>
+    </div>
   </body>
+  <footer>
+    <div class="footer-txt">
+      <p>NGC 2770, 1988</p>
+      <p>+46 (0) 102 11 58 53</p>
+    </div>
+  </footer>
 </html>

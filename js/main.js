@@ -1,12 +1,5 @@
 $(document).ready(function(){
 
-  $('.news').slick({
-    autoplay: true,
-    autoplaySpeed: 10000,
-    dots: true,
-    arrows : false
-  });
-
 	$(".image").width($(".missions").width()/3.3);
 
 	$(window).resize(function(){
@@ -31,4 +24,12 @@ $(document).ready(function(){
 		$(this).css({"z-index":"999px"})
 		$(this).width($(".missions").width()/1.5)
 	})
+
+  $(".select").click(function(event){
+		$(this).toggleClass("select-ch");
+		$('select select-ch').not(this).removeClass('select-ch');
+
+		// $('.select').toggleClass('.select-ch').siblings().removeClass('.select-ch');
+  })
+
 });
