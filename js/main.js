@@ -26,10 +26,27 @@ $(document).ready(function(){
 	})
 
   $(".select").click(function(event){
-		$(this).toggleClass("select-ch");
-		$('select select-ch').not(this).removeClass('select-ch');
+		$('.select').removeClass('select-ch')
+    $(this).addClass('select-ch')
+	})
 
-		// $('.select').toggleClass('.select-ch').siblings().removeClass('.select-ch');
-  })
+	$('input').not("input[name=appr]").blur(function(){
+    if(!$(this).val()){
+        $(this).addClass("error");
+				$(this).siblings("p").addClass("errort");
+    } else{
+        $(this).removeClass("error");
+				$(this).siblings("p").removeClass("errort");
+    }
+  });
 
+	$('#text-b').blur(function(){
+	   if(!$(this).val()){
+	     $(this).addClass("error");
+			 $(this).siblings("p").addClass("errort");
+	   } else{
+	     $(this).removeClass("error");
+			 $(this).siblings("p").removeClass("errort");
+	   }
+   });
 });
