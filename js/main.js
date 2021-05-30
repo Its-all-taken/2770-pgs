@@ -40,7 +40,7 @@ $(document).ready(function(){
     }
   });
 
-	$('#text-b').blur(function(){
+	$('textarea').blur(function(){
 	   if(!$(this).val()){
 	     $(this).addClass("error");
 			 $(this).siblings("p").addClass("errort");
@@ -49,4 +49,9 @@ $(document).ready(function(){
 			 $(this).siblings("p").removeClass("errort");
 	   }
    });
+
+// $("#send").click(function() {
+// 	$('input','textarea').val('')
+// });
+
 });

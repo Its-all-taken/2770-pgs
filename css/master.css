@@ -431,7 +431,7 @@ label{
 	margin-top: 20px;
 	margin-bottom: 50px;
 }
-.form{
+form{
 	grid-column: 1;
 }
 .phone{
@@ -459,6 +459,10 @@ input, textarea{
 }
 input:focus{
 	background: #fff;
+	border-color: #152DFF;
+}
+input[name=subm]:focus{
+	background: #EFEFEF;
 	border-color: #152DFF;
 }
 textarea{
