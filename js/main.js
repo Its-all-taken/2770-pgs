@@ -50,8 +50,16 @@ $(document).ready(function(){
 	   }
    });
 
-// $("#send").click(function() {
-// 	$('input','textarea').val('')
-// });
-
+		$("#send").click(function() {
+			if(!$('input'||'textarea').val()){
+ 	     $('input'||'textarea').not('input[name=subm]').not("input[name=appr]").addClass("error");
+ 			 $('input'||'textarea').siblings("p").addClass("errort");
+ 	   } else{
+ 	     	$('input'||'textarea').not('input[name=subm]').not("input[name=appr]").removeClass("error");
+ 			 	$('input'||'textarea').siblings("p").removeClass("errort");
+ 	   }
+		 if($('input'||'textarea').val()) {
+			$('input'||'textarea').not('input[name=subm]').not("input[name=appr]").val('');
+		 }
+});
 });
