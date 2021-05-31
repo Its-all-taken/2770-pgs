@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	
+	$('.news').slick({
+		autoplay: true,
+		autoplaySpeed: 10000,
+		dots: true,
+		arrows : false
+	});
 
 	$(".image").width($(".missions").width()/3.3);
 
@@ -50,16 +57,31 @@ $(document).ready(function(){
 	   }
    });
 
-		$("#send").click(function() {
-			if(!$('input'||'textarea').val()){
- 	     $('input'||'textarea').not('input[name=subm]').not("input[name=appr]").addClass("error");
- 			 $('input'||'textarea').siblings("p").addClass("errort");
- 	   } else{
- 	     	$('input'||'textarea').not('input[name=subm]').not("input[name=appr]").removeClass("error");
- 			 	$('input'||'textarea').siblings("p").removeClass("errort");
- 	   }
-		 if($('input'||'textarea').val()) {
-			$('input'||'textarea').not('input[name=subm]').not("input[name=appr]").val('');
-		 }
-});
+	$("#send").click(function() {
+		if(!$('input').val()){
+			$('input').not('input[name=subm]').not("input[name=appr]").addClass("error");
+			$('input').siblings("p").addClass("errort");
+		} else{
+			$('input').not('input[name=subm]').not("input[name=appr]").removeClass("error");
+			$('input').siblings("p").removeClass("errort");
+		}
+	 if($('input').val() && $('textarea').val()) {
+		 $('input').not('input[name=subm]').not("input[name=appr]").val('');
+		 $('textarea').val('');
+	 }
+	});
+
+	$("#send").click(function() {
+		if(!$('textarea').val()){
+			$('textarea').addClass("error");
+			$('textarea').siblings("p").addClass("errort");
+		} else{
+			$('textarea').removeClass("error");
+			$('textarea').siblings("p").removeClass("errort");
+		}
+	 if($('textarea').val()) {
+		 $('textarea').val('');
+	 }
+	});
+
 });

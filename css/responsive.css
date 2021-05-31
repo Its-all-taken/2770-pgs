@@ -8,6 +8,21 @@
   }
 }
 @media all and (max-width: 900px){
+  .form1{
+  	grid-row: 3;
+    grid-column: 1;
+  }
+  .form1 p, .phone p{
+    font-size: 18px;
+  }
+  .phone{
+  	grid-row: 2;
+    grid-column: 1;
+  }
+  .supp-wrap h1:first-of-type{
+    grid-row: 1;
+    grid-column: 1;
+  }
   .red{
     background-image: url('../images/glitch-g.gif');
   }
@@ -92,6 +107,12 @@
 }
   .no-fix{
     position: fixed;
+  }
+  .h-sup{
+    position: relative;
+  }
+  .supp-wrap{
+    grid-template-columns: 490px 0;
   }
 }
 @media all and (max-width: 350px){
