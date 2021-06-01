@@ -358,6 +358,7 @@ p{
 }
 .nw-text p{
   margin-top: 6px;
+	column-count: 2;
 }
 .nw-i{
   height: 450px;
@@ -365,15 +366,24 @@ p{
 }
 .nw-text{
   margin-top: 5%;
-  display: flex;
+  display: grid;
   margin-bottom: 5%;
-  justify-content: space-between;
+	grid-template-columns: 40% 40%;
+	column-gap: 10%;
 }
-.nwt-l{
-  width: 50%;
+.nw-r{
+	grid-column: 1;
 }
-.nwt-r{
-  margin-right: 10%;
+.nw-r h2{
+	line-height: 32px;
+}
+.nw-r{
+	grid-column: 2;
+}
+.n-logos{
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
 }
 
 /* shop */
