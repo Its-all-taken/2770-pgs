@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(this).addClass('select-ch')
 	})
 
-	$('input').not("input[name=appr]").blur(function(){
+	$('input, textarea').not("input[name=appr]").blur(function(){
     if(!$(this).val()){
         $(this).addClass("error");
 				$(this).siblings("p").addClass("errort");
@@ -40,41 +40,43 @@ $(document).ready(function(){
     }
   });
 
-	$('textarea').blur(function(){
-	   if(!$(this).val()){
-	     $(this).addClass("error");
-			 $(this).siblings("p").addClass("errort");
-	   } else{
-	     $(this).removeClass("error");
-			 $(this).siblings("p").removeClass("errort");
-	   }
-   });
-
 	$("#send").click(function() {
-		if(!$('input').val()){
-			$('input').not('input[name=subm]').not("input[name=appr]").addClass("error");
-			$('input').siblings("p").addClass("errort");
-		} else{
-			$('input').not('input[name=subm]').not("input[name=appr]").removeClass("error");
-			$('input').siblings("p").removeClass("errort");
-		}
-	 if($('input').val()) {
-		 $('input').not('input[name=subm]').not("input[name=appr]").val('');
-	 }
+		$('input, textarea').not("input[name=appr]").not('input[name=subm]').each(function(){
+			if (!$(this).val()) {
+				$(this).addClass("error");
+				$(this).siblings("p").addClass("errort");
+			}
+			if ($(this).val()){
+				$(this).not('input[name=subm]').not("input[name=appr]").val('');
+			}
+		})
+
 	});
 
-	$("#send").click(function() {
-		if(!$('textarea').val()){
-			$('textarea').addClass("error");
-			$('textarea').siblings("p").addClass("errort");
-		} else{
-			$('textarea').removeClass("error");
-			$('textarea').siblings("p").removeClass("errort");
-		}
-	 if($('textarea').val()) {
-		 $('textarea').val('');
-	 }
-	});
+	// $("#send").click(function() {
+	// 	if(!$('input').val()){
+	// 		$('input').not('input[name=subm]').not("input[name=appr]").addClass("error");
+	// 		$('input').siblings("p").addClass("errort");
+	// 	} else{
+	// 		$('input').not('input[name=subm]').not("input[name=appr]").removeClass("error");
+	// 		$('input').siblings("p").removeClass("errort");
+	// 	}
+	//  if($('input').val()) {
+	// 	 $('input').not('input[name=subm]').not("input[name=appr]").val('');
+	//  }
+	// });
+	// $("#send").click(function() {
+	// 	if(!$('textarea').val()){
+	// 		$('textarea').addClass("error");
+	// 		$('textarea').siblings("p").addClass("errort");
+	// 	} else{
+	// 		$('textarea').removeClass("error");
+	// 		$('textarea').siblings("p").removeClass("errort");
+	// 	}
+	//  if($('textarea').val()) {
+	// 	 $('textarea').val('');
+	//  }
+	// });
 
 	$('.news').slick({
 		autoplay: true,
