@@ -1,11 +1,4 @@
 $(document).ready(function(){
-	
-	$('.news').slick({
-		autoplay: true,
-		autoplaySpeed: 10000,
-		dots: true,
-		arrows : false
-	});
 
 	$(".image").width($(".missions").width()/3.3);
 
@@ -65,9 +58,8 @@ $(document).ready(function(){
 			$('input').not('input[name=subm]').not("input[name=appr]").removeClass("error");
 			$('input').siblings("p").removeClass("errort");
 		}
-	 if($('input').val() && $('textarea').val()) {
+	 if($('input').val()) {
 		 $('input').not('input[name=subm]').not("input[name=appr]").val('');
-		 $('textarea').val('');
 	 }
 	});
 
@@ -84,4 +76,10 @@ $(document).ready(function(){
 	 }
 	});
 
+	$('.news').slick({
+		autoplay: true,
+		autoplaySpeed: 10000,
+		dots: true,
+		arrows : false
+	});
 });
