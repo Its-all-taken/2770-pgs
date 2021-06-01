@@ -11,14 +11,16 @@
   .nw-text{
     row-gap: 5%;
     margin-top: 5%;
-    display: grid;
-    margin-bottom: 5%;
-    grid-template-columns: 100%;
   }
   .n-logos {
     justify-content: space-evenly;
+  }
 }
 @media all and (max-width: 900px){
+  .nw-text{
+    display: grid;
+    grid-template-columns: 100%;
+  }
   .form1{
   	grid-row: 3;
     grid-column: 1;
@@ -90,7 +92,7 @@
     grid-template-rows: 300px;
     grid-auto-rows: 300px;
     grid-row-gap: 70px;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: 50px;
   }
   .sh-i{
@@ -102,6 +104,9 @@
   .sh-t {
     margin-top: 10px;
   }
+  .nw-text{
+    grid-template-rows: auto auto 160px;
+  }
 }
 @media all and (max-width: 700px){
   .menu-l h1{
@@ -110,6 +115,13 @@
   }
   .menu-l h2,p{
     font-size: 12px;
+    line-height: 14px;
+  }
+  .sh-b {
+    margin-top: 90px;
+  }
+  .sh-t p{
+    line-height: 20px;
   }
 }
 @media all and (max-width: 600px){
@@ -135,6 +147,15 @@
   }
   .supp-wrap{
     grid-template-columns: 490px 0;
+  }
+  .nw-text{
+    margin: 10px;
+  }
+  .nw-text .text-ac {
+    font-size: 16px;
+  }
+  .n-logos img{
+  	width: 40%;
   }
 }
 @media all and (max-width: 350px){
@@ -168,5 +189,8 @@
   }
   .shop-item:last-of-type{
     background-image: url('../images/gl-gi.gif');
+  }
+  .sh-b{
+    padding: 15px;
   }
 }
