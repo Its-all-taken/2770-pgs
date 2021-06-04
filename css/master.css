@@ -83,10 +83,10 @@ a{
 }
 header a:hover{
   text-decoration: none;
-  color: blue;
+  color: #152DFF;
 }
 .logo:hover{
-  background-color: blue;
+  background-color: #152DFF;
 }
 h1{
   font-size: 40px;
@@ -246,6 +246,7 @@ p{
 }
 .dash{
   background-image: url('../images/pcs.png');
+	background-position: -150px -105px;
 }
 .red{
   background-image: url('../images/glitch.png');
@@ -427,6 +428,52 @@ p{
 .cell-l .sh-i:hover, .si-post:hover{
 	background-size: calc(100% + 10%);
 }
+
+/* shop-item */
+.sh-i-wrap{
+	padding: 46px;
+	padding-top: 100px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 46px;
+}
+.sh-i-i{
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	grid-row: 1 / span 5;
+}
+.sh-i-b{
+	align-self: flex-end;
+	grid-row: 5;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.buy{
+	user-select: none;
+	width: 220px;
+	font-family: PTRootUIWebRegular;
+	background: #EFEFEF;
+	border-radius: 5px;
+	font-size: 18px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+}
+.like{
+	margin-left: 15px;
+	width: 45px;
+	height: 45px;
+	background-image: url('../images/like-icon.png');
+	background-position: center;
+	background-size: 190%;
+	background-color: #2E2E2E;
+	border-radius: 50px;
+}
+
 /* form */
 label{
 	font-size: 18px;
@@ -507,8 +554,9 @@ input[type=radio]:hover, input[name=subm]:hover {
 	border-style: solid;
 	cursor: pointer;
 }
-input[type=radio]:checked {
+input[type=radio]:checked, .buy:hover, .like:hover {
   background-color: #152DFF;
+	color: #fff;
 }
 input[type=radio]:focus {
   background-color: #152DFF;

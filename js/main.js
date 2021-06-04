@@ -50,7 +50,10 @@ $(document).ready(function(){
 				location.reload();
 			}
 		})
+	});
 
+	$(".buy").click(function(){
+		$('.select').removeClass('select-ch')
 	});
 
 	$('.news').slick({
