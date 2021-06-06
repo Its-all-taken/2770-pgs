@@ -254,7 +254,7 @@ p{
 
 /*missions slider*/
 .missions {
-  height: 60vh;
+	height: 60vh;
   overflow: hidden;
 }
 .slider-content {

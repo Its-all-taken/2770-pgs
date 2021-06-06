@@ -1,3 +1,8 @@
+@media all and (min-width: 3000px){
+   *  {
+      zoom: 110%;
+   }
+}
 @media all and (min-width: 900px){
   .red:hover{
     background-image: url('../images/glitch-g.gif');
