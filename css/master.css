@@ -280,6 +280,7 @@ p{
   overflow: hidden;
   transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
   transition: all 0.5s;
+	background-color: black;
 }
 .slider-item:first-child {
   margin-left: -123px;
@@ -299,6 +300,12 @@ p{
   background-size: 1200px 650px;
   transform: translate3d(0, 0, 0) skew(20deg, 0deg);
   transition: all 0.5s;
+}
+.slid-img:hover{
+	opacity: .5;
+}
+.red:hover{
+	opacity: 1;
 }
 .image-text {
   pointer-events: none;
