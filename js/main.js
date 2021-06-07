@@ -1,30 +1,5 @@
 $(document).ready(function(){
 
-	$(".image").width($(".missions").width()/3.3);
-
-	$(window).resize(function(){
-		$(".image").width($(".missions").width()/3.3);
-	})
-
-	$(".image").mouseover(function(){
-		$(".image").width($(".missions").width()/4)
-		$(".image").css({"z-index":"-999px"});
-		$(this).css({"z-index":"999px"})
-		$(this).width($(".missions").width()/2)
-	})
-
-	$(".image").mouseout(function(){
-		$(".image").width($(".missions").width()/3.3)
-		$(this).css({"z-index":0})
-	})
-
-	$(".image:last-child").mouseover(function(event){
-		$(".image").width($(".missions").width()/5)
-		$(".image").css({"z-index":"-999px"});
-		$(this).css({"z-index":"999px"})
-		$(this).width($(".missions").width()/1.5)
-	})
-
   $(".select").click(function(event){
 		$('.select').removeClass('select-ch')
     $(this).addClass('select-ch')
@@ -53,13 +28,22 @@ $(document).ready(function(){
 	});
 
 	$(".buy").click(function(){
-		$('.select').removeClass('select-ch')
+		$('.select').removeClass('select-ch');
+    $('.select').css("pointer-events","none");
+    $('.overl').css('opacity','1');
+    $('.select').addClass('disable');
+    $(this).addClass('disable');
+    $(this).text('Куплено');
+    setTimeout(function(){
+      $('.overl').css("background-position","left");
+    }, 200);
+    setTimeout(function(){
+      $('.overl').css('opacity','0');
+    }, 400);
 	});
 
-	$('.news').slick({
-		autoplay: true,
-		autoplaySpeed: 10000,
-		dots: true,
-		arrows : false
-	});
+  $(".like").click(function(){
+    $(this).removeClass('like-o');
+    $(this).addClass('like-w');
+  });
 });
