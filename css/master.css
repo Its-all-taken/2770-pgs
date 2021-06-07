@@ -260,7 +260,6 @@ p{
 }
 .dash{
   background-image: url('../images/pcs.png');
-	background-position: -150px -105px;
 }
 .red{
   background-image: url('../images/glitch.png');
@@ -297,7 +296,7 @@ p{
   top: 0px;
   position: absolute;
   left: -115px;
-  background-size: 1200px 650px;
+  background-size: cover;
   transform: translate3d(0, 0, 0) skew(20deg, 0deg);
   transition: all 0.5s;
 }
@@ -311,8 +310,6 @@ p{
   pointer-events: none;
   width: 500%;
   opacity: 0;
-  /* bottom: 10%;
-  left: -15%; */
 	top: 10%;
   left: 5%;
   position: absolute;
