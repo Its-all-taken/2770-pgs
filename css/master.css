@@ -296,7 +296,7 @@ p{
   top: 0px;
   position: absolute;
   left: -115px;
-  background-size: cover;
+  background-size: 150vh;
   transform: translate3d(0, 0, 0) skew(20deg, 0deg);
   transition: all 0.5s;
 }
