@@ -1,0 +1,101 @@
+body{
+  width: 100vw;
+}
+.image-f{
+  background-position: center;
+  background-size: cover;
+}
+.slide-t{
+  width: 100%;
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.m-wrap{
+  padding: 46px;
+}
+h1{
+  margin-bottom: 20px;
+}
+.descr-1 *{
+  width: 50%;
+}
+.descr-l{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 50%;
+}
+.descr-l1 {
+  margin-top: 150px;
+}
+.desc-i{
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
+  grid-column: 2;
+}
+.desc-t2{
+  margin-top: 20px;
+}
+.desc-t2:first-of-type{
+  margin-top: 0px;
+}
+.desc-t2 p:last-of-type{
+  margin-top: 5px;
+}
+.descr-inf{
+  color: #000;
+  background: #fff;
+  height: 60vh;
+  display: grid;
+  grid-auto-columns: 48%;
+  column-gap: 4%;
+  padding: 84px 46px;
+}
+.descr-inf a {
+  color: #000;
+}
+.descr-inf a p{
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+.descr-inf-i{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+.descr-inf-t{
+  grid-column: 2
+}
+.descr-inf-t p{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px){
+  p {
+    font-size:18px;
+    line-height: 18px;
+  }
+  .descr-l{
+    height: auto;
+    grid-auto-columns: 100%;
+    grid-auto-rows: 40vh;
+    grid-row-gap: 100px;
+  }
+  .desc-i{
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .descr-1 * {
+    width: 100%;
+  }
+  .descr-inf{
+    display: block;
+    height: auto;
+  }
+  .descr-inf-i{
+    display: none;
+  }
+}

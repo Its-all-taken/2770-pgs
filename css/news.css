@@ -1,6 +1,3 @@
-html{
-  background: white;
-}
 @media all and (max-width: 600px){
   .no-fix .logo{
     background-image: url('../images/logo.svg');

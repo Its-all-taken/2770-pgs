@@ -39,7 +39,7 @@ footer, .menu-l{
 footer{
 	width: 100%;
 	height: 122px;
-	position: absolute;
+	position: relative;
   background: black;
   color: white;
 }
@@ -112,6 +112,7 @@ h1{
 h2{
   font-size: 24px;
   line-height: 23px;
+	margin-bottom: 18px;
 }
 h3{
   font-size: 18px;
@@ -264,6 +265,18 @@ p{
 .red{
   background-image: url('../images/glitch.png');
 }
+.bsc{
+  background-image: url('../images/base-sc.png');
+}
+.bsc2{
+  background-image: url('../images/base-plan.png');
+}
+.base-out{
+  background-image: url('../images/base-out.png');
+}
+.bsc3{
+  background-image: url('../images/base-st.png');
+}
 
 /*missions slider*/
 .missions {
@@ -383,7 +396,7 @@ p{
 .nw-text{
   margin-top: 5%;
   display: grid;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 	grid-template-columns: 40% 40%;
 	column-gap: 10%;
 }
