@@ -1,16 +1,30 @@
 body{
   width: 100vw;
 }
+body h2, body p{
+  margin: 0;
+  line-height: normal;
+}
 .image-f{
   background-position: center;
   background-size: cover;
 }
 .slide-t{
+  position: absolute;
+  z-index: 2;
+}
+.slide-t-o{
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  height: 50vh;
   width: 100%;
   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 .m-wrap{
+  z-index: 10;
   padding: 46px;
+  position: relative;
 }
 h1{
   margin-bottom: 20px;
@@ -19,8 +33,7 @@ h1{
   width: 50%;
 }
 .descr-l{
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin: 100px 0;
   width: 100%;
   display: grid;
   grid-auto-columns: 50%;
@@ -54,12 +67,20 @@ h1{
   padding: 84px 46px;
 }
 .descr-inf a {
+  transition: 0s;
   color: #000;
 }
+.descr-inf a:hover{
+  color: #fff;
+}
+.descr-inf a:hover p{
+  background-color: #152DFF;
+}
 .descr-inf a p{
+  background-color: #EFEFEF;
   margin-bottom: 15px;
   padding: 20px;
-  border: 1px solid #000;
+  border-radius: 10px;
 }
 .descr-inf-i{
   width: 100%;
@@ -72,16 +93,32 @@ h1{
 .descr-inf-t p{
   margin-bottom: 20px;
 }
-
-@media (max-width: 700px){
+.head-c *{
+  width: 100%;
+  text-align: center;
+}
+.dash-slid{
+  width: calc(100% + 92px);
+  margin-left: -46px;
+  height: 20vw;
+}
+.dash-slidesh1 img{
+  background-size: contain;
+  margin-left: -10px;
+}
+.dash-slidesh{
+  margin-top: 5vw;
+}
+.dash-slidesh1{
+  margin-bottom: 100px;
+}
+@media (max-width: 850px){
   p {
     font-size:18px;
-    line-height: 18px;
   }
   .descr-l{
     height: auto;
     grid-auto-columns: 100%;
-    grid-auto-rows: 40vh;
     grid-row-gap: 100px;
   }
   .desc-i{
@@ -97,5 +134,16 @@ h1{
   }
   .descr-inf-i{
     display: none;
+  }
+}
+@media (max-width: 350px){
+  .m-wrap {
+    padding: 13px;
+  }
+  .descr-inf{
+    padding: 84px 13px;
+  }
+  .desc-i{
+    height: 25vh;
   }
 }
