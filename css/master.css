@@ -280,6 +280,12 @@ p{
 .dash1{
   background-image: url('../images/dash1.png');
 }
+.ship-i{
+  background-image: url('../images/ship-line.png');
+}
+.ship-i1{
+  background-image: url('../images/ship-3d.png');
+}
 
 /*missions slider*/
 .missions {
