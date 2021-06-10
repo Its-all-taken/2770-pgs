@@ -114,6 +114,9 @@ h2{
   line-height: 23px;
 	margin-bottom: 18px;
 }
+.menu-l h2{
+	margin-bottom: 0;
+}
 h3{
   font-size: 18px;
 }
@@ -285,6 +288,20 @@ p{
 }
 .ship-i1{
   background-image: url('../images/ship-3d.png');
+}
+.hist{
+  background-image: url('../images/family.jpeg');
+}
+.mod{
+  background-image: url('../images/moderna.png');
+}
+.velox2{
+  background-image: url('../images/ship-close.png');
+	background-size: cover;
+}
+.dash2{
+  background-image: url('../images/pcs2.png');
+	background-size: cover;
 }
 
 /*missions slider*/

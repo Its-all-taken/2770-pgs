@@ -116,6 +116,7 @@ h1{
   height: 80vh;
   max-height: 884px;
 }
+
 @media (max-width: 850px){
   p {
     font-size:18px;

@@ -1,0 +1,40 @@
+html{
+  color: #000;
+  background-color: #fff;
+}
+a{
+  color: #000;
+}
+p{
+  width: 60%;
+}
+.wrap{
+  height: 100vh;
+  padding: 46px;
+  padding-top: 0;
+}
+.headers{
+  display: flex;
+  margin-bottom: 50px;
+}
+.headers *{
+  cursor: pointer;
+}
+.b-hist{
+  margin-right: 40px;
+}
+.h-im{
+  width: 100%;
+  height: 65%;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+.hist{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+}
+.faded{
+  opacity: .5;
+}
