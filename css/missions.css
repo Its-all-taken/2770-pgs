@@ -116,6 +116,24 @@ h1{
   height: 80vh;
   max-height: 884px;
 }
+.miss-foot{
+  flex-wrap: wrap;
+  padding: 20px 46px;
+  display: flex;
+  justify-content: space-between;
+}
+.miss-foot a{
+  min-width: 100px;
+  font-size: 18px;
+  line-height: normal;
+  margin: 30px 0px;
+}
+.miss-foot a:hover{
+  color: #152DFF;
+}
+.red{
+  background-size: 400px;
+}
 
 @media (max-width: 850px){
   p {
@@ -142,6 +160,9 @@ h1{
   }
 }
 @media (max-width: 350px){
+  .miss-foot{
+    padding: 20px 13px;
+  }
   .m-wrap {
     padding: 13px;
   }

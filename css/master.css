@@ -51,6 +51,10 @@ footer{
 .menu-l h2{
   text-align: right;
 }
+.menu-l:hover{
+	color: #152DFF;
+	transition: .5s;
+}
 .footer-txt p:first-of-type{
   margin-bottom: 4px;
 }
@@ -376,9 +380,6 @@ p{
 }
 
 /* redacted */
-.redacted {
-  overflow: hidden;
-}
 .redacted img{
     width: 70%;
     min-width: 450px;
