@@ -22,7 +22,7 @@ $(document).ready(function(){
 				$(this).siblings("p").addClass("errort");
 			}
 			if ($('input, textarea').val()){
-				location.reload();
+				window.location.replace("lost.html");
 			}
 		})
 	});

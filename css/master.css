@@ -678,6 +678,31 @@ input[type=radio]:focus {
 	color: #ED0B0B;
 }
 
+.lost-wrap{
+	top: 0;
+	height: calc(100vh - 122px);
+}
+.lost-t{
+	display: flex;
+	flex-direction: column;
+	margin: 0 46px;
+	margin-top: 20px;
+}
+.lost-t p{
+	margin-top: 5%;
+	font-size: 24px;
+}
+.lost-t a:first-of-type{
+	margin-top: 15px;
+}
+.lost-t a{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.lost-t a:hover{
+	color: #152DFF;
+}
+
 .disable{
 	border-color: black;
 	color: black;
