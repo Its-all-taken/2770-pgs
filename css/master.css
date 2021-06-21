@@ -354,7 +354,7 @@ p{
   width: 500%;
   opacity: 0;
 	top: 10%;
-  left: 5%;
+  left: 0%;
   position: absolute;
   color: white;
   transition: all 0.3s;
@@ -373,10 +373,14 @@ p{
   display: none;
 }
 .mm-sl{
+	background-color: #000;
   height: 100px;
   background-position: center;
   padding-left: 46px;
   padding-top: 20px;
+}
+.missions-m .base{
+	background-position: right;
 }
 
 /* redacted */
