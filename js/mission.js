@@ -1,7 +1,7 @@
 $(document).ready(function(){
 $('.dash-slidesh').slick({
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1000,
   infinite: true,
   arrows: false,
   slidesToShow: 3,
@@ -9,7 +9,7 @@ $('.dash-slidesh').slick({
 });
 $('.dash-slidesh1').slick({
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 1000,
   infinite: true,
   arrows: false,
   slidesToShow: 3,
